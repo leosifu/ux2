@@ -1,0 +1,14 @@
+
+.carrusel{
+  max-width: 50%;
+  height: auto;
+}
+
+.noticias{
+  position:fixed;
+}
+
+body{
+  background-color: #f5f2ff;
+  color: #28262c
+}

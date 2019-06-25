@@ -1,0 +1,15 @@
+.navB{
+  background-color: #28262c !important;
+}
+
+.menuA{
+  color: #f5f2ff !important;
+-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.menuA:hover {
+  background-color: #72bb53ff; /* Green */
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+}
