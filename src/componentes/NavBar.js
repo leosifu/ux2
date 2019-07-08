@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../css/navbar.css'
 import { Link } from 'react-router-dom';
 
-
 class Nav extends Component{
   render(){
     return(
@@ -17,26 +16,27 @@ class Nav extends Component{
           <li class="nav-item active">
             <a class="nav-link menuA" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
-          <div class="vertical" ></div>
+          <div class="lineaVertical" ></div>
           <li class="nav-item">
             <a class="nav-link menuA" href="#">Músicos</a>
           </li>
-          <div class="vertical" ></div>
+          <div class="lineaVertical" ></div>
           <li class="nav-item">
             <a class="nav-link menuA" href="#">Bandas</a>
           </li>
-          <div class="vertical" ></div>
+          <div class="lineaVertical" ></div>
           <li class="nav-item">
             <Link to="/anuncios">
               <a class="nav-link menuA">Eventos</a>
             </Link>
           </li>
-          <div class="vertical" ></div>
+          <div class="lineaVertical" ></div>
           <li>
             <form class="form-inline">
               <button class="btn btn-sm reg" type="button"><u>Registro</u></button>
-              <button class="btn  logIn" type="button">Log in</button>
-
+              <Link to="/login">
+              <button class="btn  logIn" type="button">Login</button>
+              </Link>
             </form>
           </li>
 

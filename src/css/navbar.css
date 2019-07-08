@@ -48,7 +48,7 @@
   background-color: #72bb53ff;
 }
 
-.vertical{
+.lineaVertical{
     background-color:#5707b3; 
     width:0px;height:30px; 
     border-right:1px solid #5707b3; 
@@ -56,4 +56,18 @@
     
     position: relative; left:73px;
    
+}
+
+.nav-item{
+color: #0D224F;
+font-family: Helvetica, sans-serif;
+font-weight: bold;
+padding-top: 7px;
+padding-left: 5px;
+padding-right: 5px;
+display:block;
+}
+
+.navbar-toggler{
+  background-color: #72bb53ff !important;
 }

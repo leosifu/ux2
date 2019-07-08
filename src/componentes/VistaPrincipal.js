@@ -6,10 +6,10 @@ class VistaPrincipal extends Component{
     return(
       <div>
       <div class="row ">
-        <div class="col-2 lateralI">col-8 kbdkjsab dsajdbsakjbd
+        <div class="col-3 lateralI">col-8 kbdkjsab dsajdbsakjbd
         asb sjdhsajd</div>
 
-        <div class="col-9">
+        <div class="col-8">
         <center>
         <div id="carouselExampleIndicators" class="carousel slide carrusel" data-ride="carousel">
             <ol class="carousel-indicators">

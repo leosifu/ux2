@@ -1,0 +1,35 @@
+.Login{
+    border: 1px solid #28262c;
+    height: 300px;
+    width: 400px;
+    position: relative; top:100px; left: 35%;
+    background-color: #28262c;
+    color: #f5f2ff;
+}
+.interior{
+    position: relative; left:20%;
+    
+}
+input{
+    width: 250px;
+}
+.boton{
+    position: relative;left:18%; top: 20px;
+    border: 1px solid #72bb53ff;
+    width: 100px;
+}
+.boton:hover{
+    background-color: #72bb53ff;
+    
+}
+body{
+    /*background-image: url(https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2018/09/21/5ba52a5cb0465.jpeg);
+    height: 500px; /* You must set a specified height */
+    /*background-position: center; /* Center the image */
+    /*background-repeat: no-repeat; /* Do not repeat the image */
+    /*background-size: cover; */
+}
+
+.boton{
+    color: #f5f2ff;
+}
