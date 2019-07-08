@@ -5,11 +5,55 @@
 .menuA{
   color: #f5f2ff !important;
 -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
+  margin-inline-start: 80px;
+  margin-top: 5px;
+  border-color: #72bb53ff;
+  width: 90%;
+  text-align: center;
 }
 
 .menuA:hover {
   background-color: #72bb53ff; /* Green */
-  color: white;
+  color: white !important;
   border-radius: 5px 5px 5px 5px;
+  align-content: right;
+  
+}
+
+.menu{
+  position: relative; left: 90px; top: 5px;
+  height: 80%;
+}
+
+.reg{
+  color: #72bb53ff;
+  position: relative; left: 390px;
+}
+
+.reg:hover{
+  color: lime;
+}
+
+.logIn{
+  border-color: #72bb53ff;
+  color: #72bb53ff;
+  position: relative; left: 400px;
+}
+
+
+.logIn:hover{
+  border-color: #72bb53ff;
+  color :  #28262c ;
+  background-color: #72bb53ff;
+}
+
+.vertical{
+    background-color:#5707b3; 
+    width:0px;height:30px; 
+    border-right:1px solid #5707b3; 
+    margin-top: 12px;
+    
+    position: relative; left:73px;
+   
 }

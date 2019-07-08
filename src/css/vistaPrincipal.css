@@ -1,14 +1,31 @@
 
 .carrusel{
-  max-width: 50%;
-  height: auto;
+  /*max-width: 70%;*/
+  width: 90%;
+  position: relative; top:50px;
 }
 
 .noticias{
-  position:fixed;
+  position:relative; top: 100px;
 }
 
 body{
   background-color: #f5f2ff;
-  color: #28262c
+  color: #28262c;
+  
+}
+
+hr{
+  width: 70%;
+  color: #28262c;
+  size: 2px solid;
+}
+
+.botonLeer{
+  background-color: #72bb53ff;
+  color: #f5f2ff;
+}
+
+.botonLeer:hover{
+  border: 1px solid #28262c;
 }
