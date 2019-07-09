@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
 import '../css/vistaPrincipal.css'
+import Calendar from 'react-calendar/dist/entry.nostyle';
+
 
 class VistaPrincipal extends Component{
   render(){
     return(
       <div>
         <div class="row ">
-          <div class="col-2 lateralI">
-          col-8 kbdkjsab dsajdbsakjbd
-          asb sjdhsajd
+          <div class="col-2 margCalen">
+
+          <Calendar className="calen"/>
         </div>
 
-        <div class="col-10">
+        <div class="col-9">
         <center>
         <div id="carouselExampleIndicators" class="carousel slide carrusel" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -43,7 +45,8 @@ class VistaPrincipal extends Component{
         </center>
         <div class="noticias">
         <hr></hr>
-        Noticias
+        <div className="margNoti">
+        <h3>Noticias</h3>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Evento 1</h5>
@@ -60,7 +63,7 @@ class VistaPrincipal extends Component{
           </div>
         </div>
         </div>
-
+        </div>
         </div>
 
       </div>

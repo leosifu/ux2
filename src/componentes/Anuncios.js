@@ -45,7 +45,7 @@ class Anuncios extends Component{
           <Calendar/>
         </div>
         <div className="col-10 vistaAnun">
-          <h3>Buscar Eventos</h3>
+          <h3>Búsqueda de Eventos</h3>
           <div className="input-group buscadorAnun">
             <select class="custom-select" id="inputGroupSelect01">
               <option selected>Choose...</option>

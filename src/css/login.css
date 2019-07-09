@@ -3,24 +3,27 @@
     height: 300px;
     width: 400px;
     position: relative; top:100px; left: 35%;
-    background-color: #28262c;
+    background-color: #998fc7;
     color: #f5f2ff;
+    border-radius: 35px;
 }
 .interior{
     position: relative; left:20%;
-    
+
 }
 input{
     width: 250px;
 }
 .boton{
+    background-color: #28262c;
     position: relative;left:18%; top: 20px;
-    border: 1px solid #72bb53ff;
+    border: 1px solid #d4c2fc;
     width: 100px;
+    border-radius: 10px;
 }
 .boton:hover{
     background-color: #72bb53ff;
-    
+
 }
 body{
     /*background-image: url(https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2018/09/21/5ba52a5cb0465.jpeg);

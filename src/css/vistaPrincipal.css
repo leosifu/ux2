@@ -12,7 +12,7 @@
 body{
   background-color: #f5f2ff;
   color: #28262c;
-  
+
 }
 
 hr{
@@ -28,4 +28,8 @@ hr{
 
 .botonLeer:hover{
   border: 1px solid #28262c;
+}
+
+.margNoti{
+  padding: 30px 50px 10px 50px;
 }
