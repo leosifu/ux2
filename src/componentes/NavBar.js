@@ -36,11 +36,13 @@ class Nav extends Component{
           </li>
           <div class="lineaVertical" ></div>
           <li class="nav-item">
-            <a class="nav-link menuA" href="#">Bandas</a>
+            <Link to="/bandas">
+              <a class="nav-link menuA">Bandas</a>
+            </Link>
           </li>
           <div class="lineaVertical" ></div>
           <li class="nav-item">
-            <Link to="/anuncios">
+            <Link to="/eventos">
               <a class="nav-link menuA">Eventos</a>
             </Link>
           </li>

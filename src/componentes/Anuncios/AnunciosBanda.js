@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import '../css/anuncios.css';
+
 import Calendar from 'react-calendar';
 
 
-class Anuncios extends Component{
+class AnunciosBanda extends Component{
 
   constructor(props) {
     super(props);
@@ -47,32 +47,32 @@ class Anuncios extends Component{
         <div className="col-10 vistaAnun">
           <h3>Búsqueda de Eventos</h3>
           <div className="input-group buscadorAnun">
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Región...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
+              <option selected>Comuna...</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
+              <option selected>Estilo...</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
+              <option selected>Instrumento...</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button">Button</button>
+              <button class="btn btn-outline-secondary" type="button">Buscar</button>
             </div>
           </div>
           {this.anuncios()}
@@ -82,4 +82,4 @@ class Anuncios extends Component{
   }
 }
 
-export default Anuncios;
+export default AnunciosBanda;
