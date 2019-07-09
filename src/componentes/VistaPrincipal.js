@@ -5,11 +5,13 @@ class VistaPrincipal extends Component{
   render(){
     return(
       <div>
-      <div class="row ">
-        <div class="col-3 lateralI">col-8 kbdkjsab dsajdbsakjbd
-        asb sjdhsajd</div>
+        <div class="row ">
+          <div class="col-2 lateralI">
+          col-8 kbdkjsab dsajdbsakjbd
+          asb sjdhsajd
+        </div>
 
-        <div class="col-8">
+        <div class="col-10">
         <center>
         <div id="carouselExampleIndicators" class="carousel slide carrusel" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -37,7 +39,7 @@ class VistaPrincipal extends Component{
               <span class="sr-only">Next</span>
             </a>
         </div>
-       
+
         </center>
         <div class="noticias">
         <hr></hr>
@@ -60,7 +62,7 @@ class VistaPrincipal extends Component{
         </div>
 
         </div>
-        
+
       </div>
       </div>
     )

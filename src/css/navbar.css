@@ -18,6 +18,14 @@
   color: white !important;
   border-radius: 5px 5px 5px 5px;
   align-content: right;
+
+}
+
+.menuA:active{
+  background-color: #72bb53ff; /* Green */
+  color: white !important;
+  border-radius: 5px 5px 5px 5px;
+  align-content: right;
   
 }
 
@@ -49,13 +57,13 @@
 }
 
 .lineaVertical{
-    background-color:#5707b3; 
-    width:0px;height:30px; 
-    border-right:1px solid #5707b3; 
+    background-color:#5707b3;
+    width:0px;height:30px;
+    border-right:1px solid #5707b3;
     margin-top: 12px;
-    
+
     position: relative; left:73px;
-   
+
 }
 
 .nav-item{
