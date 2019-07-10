@@ -9,7 +9,8 @@ class VistaPrincipal extends Component{
       <div>
         <div class="row ">
           <div class="col-2 margCalen">
-
+          <br></br>
+          <h5><center><label>Próximos eventos</label></center></h5>
           <Calendar className="calen"/>
         </div>
 
@@ -23,13 +24,13 @@ class VistaPrincipal extends Component{
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img width="100" height="250" class="d-block w-100" src="https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg" alt="First slide" />
+                <img  height="300" class="d-block w-100" src="https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg" alt="Evento 1" />
               </div>
               <div class="carousel-item">
-                <img width="100" height="250" class="d-block w-100" src="http://www.calleboticaeventos.com/wp-content/uploads/2016/05/calle-botica-eventos-concierto-6-2.jpg" alt="Second slide" />
+                <img  height="300" class="d-block w-100" src="http://www.calleboticaeventos.com/wp-content/uploads/2016/05/calle-botica-eventos-concierto-6-2.jpg" alt="Evento 2" />
               </div>
               <div class="carousel-item">
-                <img width="100" height="250" class="d-block w-100" src="https://s3.pixers.pics/pixers/700/FO/34/90/42/82/700_FO34904282_a5a8025222fec644ee4d4b7b09141326.jpg" alt="Third slide" />
+                <img  height="300" class="d-block w-100" src="https://s3.pixers.pics/pixers/700/FO/34/90/42/82/700_FO34904282_a5a8025222fec644ee4d4b7b09141326.jpg" alt="Evento 3" />
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

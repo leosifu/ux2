@@ -19,6 +19,7 @@ class Nav extends Component{
     return(
       <nav class="navbar navbar-expand-lg navbar-light bg-light navB">
         <a class="navbar-brand" href="#">Nav</a>
+        <h3><label>Garage Music</label></h3>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +33,9 @@ class Nav extends Component{
           </li>
           <div class="lineaVertical" ></div>
           <li class="nav-item">
+          <Link to="/">
             <a class="nav-link menuA" href="#">Músicos</a>
+          </Link>
           </li>
           <div class="lineaVertical" ></div>
           <li class="nav-item">
@@ -47,14 +50,14 @@ class Nav extends Component{
             </Link>
           </li>
           <div class="lineaVertical" ></div>
-          <li>
+          
             <form class="form-inline">
               <button class="btn btn-sm reg" type="button"><u>Registro</u></button>
               <Link to="/login">
               <button class="btn  logIn" type="button">Login</button>
               </Link>
             </form>
-          </li>
+          
 
         </ul>
         </div>

@@ -1,7 +1,7 @@
 
 .carrusel{
   /*max-width: 70%;*/
-  width: 90%;
+  width: 70%;
   position: relative; top:50px;
 }
 
@@ -32,4 +32,17 @@ hr{
 
 .margNoti{
   padding: 30px 50px 10px 50px;
+ 
+}
+
+.margCalen{
+  border: 1px solid #28262c;
+  height: 900px;
+  
+}
+
+.calen{
+  background-color: #f5f2ff !important;
+  
+
 }
