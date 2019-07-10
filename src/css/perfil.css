@@ -1,0 +1,42 @@
+.vistaD{
+  padding: 25px 80px 25px 40px;
+}
+
+.eventR{
+  padding: 25px 25px 25px 25px;
+  border: 3px solid rgba(212, 194, 252, 0.5);
+
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.cardEv{
+  flex: 410px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.cardsEComent{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sideE{
+  background-color: #998fc7;
+  color: #28262c;
+  text-decoration: none;
+}
+
+.sideE:hover{
+  background-color: #6558A0;
+  text-decoration: none;
+  color: #28262c;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.margSide{
+  margin-bottom: 20px;
+}

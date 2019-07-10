@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import '../../css/anunciosB.css';
 import Calendar from 'react-calendar';
 
 
@@ -8,9 +8,9 @@ class AnunciosBanda extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      anuncios:[{'title': 'Nombre Evento', 'cuerpo': 'jshgrbjgeber', 'img': 'https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg'},{'title': 'Nombre Evento2', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfXpvDpZQmIjYnDC1p8qkM9pMk4UwNvSVtdE12RJLkjZ7w4XL3w'},
-      {'title': 'Nombre Evento3', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg'},{'title': 'Nombre Evento4', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn2PVuOtgpK-XEG0D2odXOqtg3a65vrqu7561mPl8trCEJCPQ7Q'},
-      {'title': 'Nombre Evento5', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol9TbYoaSkq5wDXXZZ7c6iNaWSs0p2IYP-BMsbngpTFfqhLe4'},{'title': 'Nombre Evento6', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5iX3Hksg6iQT1STitOcK9labD4UPPcwpVja89qLAs-gdqTqSSg'}],
+      anuncios:[{'title': 'Nombre Banda', 'cuerpo': 'jshgrbjgeber', 'img': 'https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg'},{'title': 'Nombre Banda2', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfXpvDpZQmIjYnDC1p8qkM9pMk4UwNvSVtdE12RJLkjZ7w4XL3w'},
+      {'title': 'Nombre Banda3', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg'},{'title': 'Nombre Banda4', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn2PVuOtgpK-XEG0D2odXOqtg3a65vrqu7561mPl8trCEJCPQ7Q'},
+      {'title': 'Nombre Banda5', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol9TbYoaSkq5wDXXZZ7c6iNaWSs0p2IYP-BMsbngpTFfqhLe4'},{'title': 'Nombre Banda6', 'cuerpo': 'jshgrbjgeber', 'img': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5iX3Hksg6iQT1STitOcK9labD4UPPcwpVja89qLAs-gdqTqSSg'}],
       algomas:0,
 
     }
@@ -45,6 +45,11 @@ class AnunciosBanda extends Component{
           <Calendar/>
         </div>
         <div className="col-10 vistaAnun">
+
+          <div>
+          </div>
+
+
           <h3>Búsqueda de Eventos</h3>
           <div className="input-group buscadorAnun">
           <select class="custom-select" id="inputGroupSelect01">
