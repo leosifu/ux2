@@ -1,20 +1,48 @@
 .navB{
   background-color: #28262c !important;
+  color: #f5f2ff !important;
 }
 
+.menu{
+  position: relative;left: 200px;
+}
 .menuA{
   color: #f5f2ff !important;
--webkit-transition-duration: 0.4s; /* Safari */
+  
+}
+
+ul li a {
+display: block;
+padding: 7px;
+text-align: center;
+
+}
+
+ul li a:hover {
+  
+  background: #72bb53ff;
+  /*-webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;*/
+  text-decoration: none;
+  border-radius: 5px;
+  
+  
+  }
+
+
+/*.menuA{
+  color: #f5f2ff !important;
+-webkit-transition-duration: 0.4s; 
   transition-duration: 0.2s;
   margin-inline-start: 80px;
   margin-top: 5px;
-  border-color: #72bb53ff;
+  
   width: 90%;
   text-align: center;
 }
 
 .menuA:hover {
-  background-color: #72bb53ff; /* Green */
+  background-color: #72bb53ff; 
   color: white !important;
   border-radius: 5px 5px 5px 5px;
   align-content: right;
@@ -22,7 +50,7 @@
 }
 
 .menuA:active{
-  background-color: #72bb53ff; /* Green */
+  background-color: #72bb53ff; 
   color: white !important;
   border-radius: 5px 5px 5px 5px;
   align-content: right;
@@ -32,11 +60,11 @@
 .menu{
   position: relative; left: 90px; top: 5px;
   height: 80%;
-}
+}*/
 
 .reg{
   color: #72bb53ff;
-  position: relative; left: 390px;
+  position: relative; left: 400px;
 }
 
 .reg:hover{
@@ -62,7 +90,7 @@
     border-right:1px solid #5707b3;
     margin-top: 12px;
 
-    position: relative; left:73px;
+   
 
 }
 
