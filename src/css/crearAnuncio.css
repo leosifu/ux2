@@ -1,0 +1,35 @@
+.crearAnuncio {
+    border:1px solid #28262c;
+    text-align: right;
+    height: 500px;
+    width: 70%;
+    position: relative; top:40px; left: 10%;
+    
+    color: #28262c;
+    border-radius: 10px;
+    
+   
+}
+
+input {
+    border:1px solid #72bb53ff;
+    border-radius: 5px;
+}
+
+.cantidad{
+    width: 50px;
+}
+
+.botonPublicar{
+    background-color: #72bb53ff;
+    color: #f5f2ff;
+    border: 1px solid #28262c;
+    width: 200px;
+    border-radius: 5px;
+    position: relative; top: 10px; left: 10px;
+}
+
+.botonPublicar:hover{
+    border: 1px solid #28262c;
+    color: #28262c;
+}
