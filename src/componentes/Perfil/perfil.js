@@ -3,6 +3,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import Calendar from 'react-calendar';
 import '../../css/perfil.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 class Perfil extends Component{
 
@@ -17,6 +18,18 @@ class Perfil extends Component{
     }
     this.anuncios = this.anuncios.bind(this)
     this.comentarios = this.comentarios.bind(this)
+  }
+
+  componentDidMount(){
+    var link = "http://localhost:3001/anuncios"
+    axios.get(link)
+    .then(res=>{
+
+      console.log(res);
+    })
+    .catch((error)=>{
+
+    })
   }
 
   onStarClick(nextValue, prevValue, name) {
@@ -65,13 +78,13 @@ class Perfil extends Component{
         <div className="col-2 margCalen">
         <div class=" border-right margSide">
           <div class="list-group list-group-flush">
-            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-user-alt"></i>    Perfil</a>
+            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-user-alt iconP"></i>    Perfil</a>
             </Link>
-            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-folder"></i>      Mis Anuncios</a>
+            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-folder iconP"></i>      Mis Anuncios</a>
             </Link>
-            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-users"></i>      Postulantes</a>
+            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-users iconP"></i>      Postulantes</a>
             </Link>
-            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-envelope"></i>    Mensajes</a>
+            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-envelope iconP"></i>    Mensajes</a>
             </Link>
           </div>
         </div>

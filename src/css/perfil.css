@@ -23,9 +23,11 @@
 }
 
 .sideE{
-  background-color: #998fc7;
+  background-color: #f5f2ff;
   color: #28262c;
   text-decoration: none;
+  border-bottom: 1px solid #998fc7;
+  border-right: 1px solid #998fc7;
 }
 
 .sideE:hover{
@@ -39,4 +41,31 @@
 
 .margSide{
   margin-bottom: 20px;
+}
+
+.iconP{
+  color: #998fc7;
+}
+
+.btn-primary{
+  background-color: #998fc7;
+  border-color: #998fc7;
+}
+
+.btn:hover{
+
+}
+
+
+
+h3{
+  color: #998fc7;
+}
+
+h5{
+  color: #998fc7;
+}
+
+h6{
+  color: #998fc7;
 }
