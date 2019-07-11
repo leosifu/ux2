@@ -14,10 +14,19 @@ class AnunciosEvento extends Component{
       anuncios:[],
       algomas:0,
       com: [],
+      search:'',
+      region: '',
+      comuna: '',
+      mes: 0,
+      notF: false
 
     }
     this.anuncios = this.anuncios.bind(this)
     this.renderCom = this.renderCom.bind(this)
+    this.cambio = this.cambio.bind(this)
+    this.handleChange2 = this.handleChange2.bind(this)
+    this.handleChange3 = this.handleChange3.bind(this)
+    this.buscar = this.buscar.bind(this)
   }
 
   componentDidMount(){
@@ -29,28 +38,66 @@ class AnunciosEvento extends Component{
     })
     .catch((error)=>{
     })
+    var link2 = "http://localhost:3001/eventos?"
+
+    axios.get(link2)
+    .then(res=>{
+      console.log(res.data);
+    })
+    .catch((error)=>{
+    })
+  }
+
+  componentDidUpdate(prevProps, prevState){
+
+  }
+
+  cambio(event){
+    const target = event.target;
+    const name = target.name;
+    const value = target.value;
+    this.setState({
+      [name]: value
+    });
   }
 
   anuncios(){
-    const Anun = this.state.anuncios.map((anuncio)=>(
-      <div className="card cardAnun">
-        <img src={anuncio.img} class="card-img-top imagenAnuncio" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">{anuncio.title}</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+    var anunciosAlt = []
+    for (var i = 0; i < this.state.anuncios.length; i++) {
+      if(this.state.anuncios[i].title.toLowerCase().indexOf(this.state.search.toLowerCase()) != -1 ){
+        anunciosAlt.push(this.state.anuncios[i]);
+      }
+    }
+    console.log(anunciosAlt);
+    if(anunciosAlt.length>0){
+      const Anun = anunciosAlt.map((anuncio)=>(
+        <div className="card cardAnun">
+          <img src={anuncio.img} class="card-img-top imagenAnuncio" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{anuncio.title}</h5>
+            <p class="card-text">{anuncio.cuerpo}</p>
+          </div>
+          <div class="card-footer footAnun">
+            <button class="btn btn-primary">Ver Perfil</button>
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
         </div>
-        <div class="card-footer footAnun">
-          <button class="btn btn-primary">Ver Perfil</button>
-          <small class="text-muted">Last updated 3 mins ago</small>
+      ))
+      console.log("ASDSAD");
+      return(
+        <div className="buscadorAnun cardsAnun">
+          {Anun}
         </div>
-      </div>
-    ))
+      )
+    }
+    console.log("asdasda");
     return(
       <div className="buscadorAnun cardsAnun">
-        {Anun}
+        No se encontraron Anuncios
       </div>
     )
   }
+
   handleChange(event) {
     var Tarapaca = new Array("Arica");
     var Antofagasta = new Array("Alto Hospicio","Iquique","Pozo Almonte");
@@ -72,7 +119,7 @@ class AnunciosEvento extends Component{
     var region = event.target.value;
     if (region !== 0) {
         var comunasId = eval(region);
-
+        this.setState({region})
         this.setState({com:comunasId})
     }
 
@@ -80,21 +127,51 @@ class AnunciosEvento extends Component{
   }
 
   renderCom(){
-    console.log("asdad");
     const Com = this.state.com.map((com)=>{
       return(
 
-          <option value={com}>
+          <option value={com.replace(/\s/g, "")}>
             {com}
           </option>
       )
     })
     return(
-      <select name="comuna" id="comuna" className="comuna custom-select">
+      <select name="comuna" id="comuna" className="comuna custom-select" onChange={this.handleChange2}>
           <option>Comunas por Region</option>
           {Com}
       </select>
     )
+  }
+
+  handleChange2(event){
+    var comuna = event.target.value;
+    this.setState({comuna})
+  }
+
+  handleChange3(event){
+    var mes = event.target.value;
+    this.setState({mes})
+  }
+
+  buscar(){
+    var link2 = "http://localhost:3001/eventos?"
+    if(this.state.region != ''){
+      link2 = link2+"region=" + this.state.region
+    }
+    if(this.state.comuna != ''){
+      link2 = link2+"&comuna=" + this.state.comuna
+    }
+    if(this.state.mes != 0){
+      link2 = link2+"&mes=" + this.state.mes
+    }
+    console.log(link2);
+    axios.get(link2)
+    .then(res=>{
+      console.log(res.data);
+      this.setState({anuncios:res.data})
+    })
+    .catch((error)=>{
+    })
   }
 
   render(){
@@ -118,9 +195,9 @@ class AnunciosEvento extends Component{
         <div className="col-10 vistaAnun">
           <h3>Búsqueda de Eventos</h3>
           <div className="input-group buscadorAnun">
-            <input className="form-control" placeholder="Buscar Evento" />
+            <input className="form-control" placeholder="Buscar Evento" name="search" onChange={this.cambio}/>
             <select class="custom-select"  value={this.state.value} onChange={this.handleChange}>
-              <option selected="selected">Regiones</option>
+              <option value="" selected="selected">Regiones</option>
               <option value="Tarapaca">Tarapaca</option>
               <option value="Antofagasta">Antofagasta</option>
               <option value="Atacama">Atacama</option>
@@ -139,23 +216,23 @@ class AnunciosEvento extends Component{
             </select>
             {this.renderCom()}
 
-            <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Mes...</option>
-              <option value="Enero">Enero</option>
-              <option value="Febrero">Febrero</option>
-              <option value="Marzo">Marzo</option>
-              <option value="Abril">Abril</option>
-              <option value="Mayo">Mayo</option>
-              <option value="Junio">Junio</option>
-              <option value="Julio">Julio</option>
-              <option value="Agosto">Agosto</option>
-              <option value="Septiembre">Septiembre</option>
-              <option value="Octubre">Octubre</option>
-              <option value="Noviembre">Noviembre</option>
-              <option value="Diciembre">Diciembre</option>
+            <select class="custom-select" id="inputGroupSelect01" onChange={this.handleChange3}>
+              <option value="0" selected>Mes...</option>
+              <option value="1">Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Septiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
             </select>
             <div class="input-group-append">
-              <button class="btn btn-primary" type="button">Buscar</button>
+              <button class="btn btn-primary" type="button" onClick={this.buscar}>Buscar</button>
             </div>
           </div>
           {this.anuncios()}

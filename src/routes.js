@@ -9,6 +9,7 @@ import CrearAnuncio from './componentes/CrearAnuncio';
 import Login from './componentes/Login';
 import VistaPrincipalGestor from './componentes/VistaPrincipalGestor';
 import Perfil from './componentes/Perfil/perfil'
+import MisAnuncios from './componentes/Anuncios/MisAnuncios'
 
 const AppRoutes = ({store}) =>
   <App>
@@ -20,6 +21,7 @@ const AppRoutes = ({store}) =>
       <Route exact path="/login" component={Login} />
       <Route exact path="/HomeG" component={VistaPrincipalGestor} />
       <Route exact path="/perfil" component={Perfil} />
+      <Route exact path="/misAnuncios" component={MisAnuncios} />
 
 
     </Switch>

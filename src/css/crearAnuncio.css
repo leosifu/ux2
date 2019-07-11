@@ -32,3 +32,16 @@ input {
     border: 1px solid #28262c;
     color: #28262c;
 }
+.rodal-confirm-btn {
+    position: absolute;
+    font: inherit;
+    bottom: 16px;
+    width: 80px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    transition: background .2s;
+    border: 1px solid #998fc7;
+    color: #fff;
+    right: 115px;
+    background: #998fc7;
+}

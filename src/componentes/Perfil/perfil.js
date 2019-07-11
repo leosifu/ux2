@@ -78,9 +78,9 @@ class Perfil extends Component{
         <div className="col-2 margCalen">
         <div class=" border-right margSide">
           <div class="list-group list-group-flush">
-            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-user-alt iconP"></i>    Perfil</a>
+            <Link className="sideE" to='/perfil'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-user-alt iconP"></i>    Perfil</a>
             </Link>
-            <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-folder iconP"></i>      Mis Anuncios</a>
+            <Link className="sideE" to='/misAnuncios'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-folder iconP"></i>      Mis Anuncios</a>
             </Link>
             <Link className="sideE" to='/'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-users iconP"></i>      Postulantes</a>
             </Link>

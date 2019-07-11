@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import Calendar from 'react-calendar';
 import '../css/crearAnuncio.css'
+import axios from 'axios';
+import Rodal from 'rodal';
+import 'rodal/lib/rodal.css';
+
+
 class CrearAnuncio extends Component{
 
     constructor(props) {
@@ -9,19 +14,27 @@ class CrearAnuncio extends Component{
           value: '0',
           nombre: '',
           date: '',
-          img: '',
+          archivo: '',
           dir: '',
           reg: '',
           com: [],
-          cant: '',
+          cant: 0,
           est: '',
-          detalles: ''
+          detalles: '',
+          comuna: '',
+          visible: false,
+          visible2: false,
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.handleChange2 = this.handleChange2.bind(this);
         this.cambio = this.cambio.bind(this)
         this.renderCom = this.renderCom.bind(this)
-
+        this.onClickSub = this.onClickSub.bind(this)
+        this.hide = this.hide.bind(this)
+        this.show = this.show.bind(this)
+        this.hide2 = this.hide2.bind(this)
+        this.show2 = this.show2.bind(this)
       }
 
       handleChange(event) {
@@ -44,7 +57,7 @@ class CrearAnuncio extends Component{
         this.setState({value: event.target.value});
         var region = event.target.value;
         if (region !== 0) {
-            console.log(region);
+            this.setState({reg:region})
             var comunasId = eval(region);
 
             this.setState({com:comunasId})
@@ -57,32 +70,106 @@ class CrearAnuncio extends Component{
         const target = event.target;
         const name = target.name;
         const value = target.value;
-        console.log(value);
         this.setState({
           [name]: value
         });
-        console.log(this.state.com);
       }
 
 
   renderCom(){
-    console.log("asdad");
     const Com = this.state.com.map((com)=>{
       return(
 
-          <option>
+          <option value={com.replace(/\s/g, "")}>
             {com}
           </option>
       )
     })
     return(
-      <select name="comuna" id="comuna" className="comuna custom-select">
+      <select name="comuna" id="comuna" className="comuna custom-select" onChange={this.handleChange2}>
           <option value="0">Comunas por Region</option>
           {Com}
       </select>
     )
   }
 
+  handleChange2(event){
+    var comuna = event.target.value;
+    this.setState({comuna})
+  }
+
+  onClickSub(){
+    if(this.state.nombre.length==''){
+      this.show2()
+    }
+    else if (this.state.date == '') {
+      this.show2()
+    }
+    else if (this.state.archivo == '') {
+      this.show2()
+    }
+    else if (this.state.dir == '') {
+      this.show2()
+    }
+    else if (this.state.dir == '') {
+      this.show2()
+    }
+    else if (this.state.reg == '') {
+      this.show2()
+    }
+    else if (this.state.comuna == '') {
+      this.show2()
+    }
+    else if (this.state.cant <= 0) {
+      this.show2()
+    }
+    else if (this.state.est == '') {
+      this.show2()
+    }
+    else if (this.state.detalles == '') {
+      this.show2()
+    }
+    else {
+      var fecha = new Date(this.state.date);
+      var mes = fecha.getMonth()+1;
+      const Evento = {
+        "title": this.state.nombre,
+        "fecha": this.state.date,
+        "img": this.state.archivo,
+        "direccion": this.state.dir,
+        "region": this.state.reg,
+        "comuna": this.state.comuna,
+        "cantidad": this.state.cant,
+        "estilo": this.state.est,
+        "cuerpo": this.state.detalles,
+        "mes": mes
+      }
+      console.log(Evento);
+      var link = "http://localhost:3001/eventos"
+      axios.post(link, Evento)
+      .then(res=>{
+        console.log(res.data);
+        this.show()
+      })
+      .catch((error)=>{
+      })
+    }
+  }
+
+  show() {
+        this.setState({ visible: true });
+    }
+
+    hide() {
+        this.setState({ visible: false });
+    }
+    show2() {
+          this.setState({ visible2: true });
+      }
+
+      hide2() {
+          this.setState({ visible2: false });
+      }
 
   render(){
     return(
@@ -92,6 +179,17 @@ class CrearAnuncio extends Component{
           <div style={{fontSize: 9}}>
             <Calendar/>
           </div>
+          <button onClick={this.show}>show</button>
+
+          <Rodal visible={this.state.visible} onClose={this.hide} class="rodal-dialog rodal-zoom-enter" width={300} height={120}>
+              <div class="header">Se ha creado el evento</div>
+              <button class="rodal-confirm-btn" onClick={this.hide}>Aceptar</button>
+          </Rodal>
+
+          <Rodal visible={this.state.visible2} onClose={this.hide2} class="rodal-dialog rodal-zoom-enter" width={300} height={120}>
+              <div class="header">Faltan campos por rellenar</div>
+              <button class="rodal-confirm-btn" onClick={this.hide2}>Aceptar</button>
+          </Rodal>
 
         </div>
         <div className=" col-10 ">
@@ -101,13 +199,13 @@ class CrearAnuncio extends Component{
 
         <table>
             <tr>
-                <td><label>Nombre evento : </label></td><td><input type="text" className="form-control" id="nombre" onChange={this.cambio}></input></td>
+                <td><label>Nombre evento : </label></td><td><input type="text" className="form-control" name="nombre" onChange={this.cambio}></input></td>
             </tr>
             <tr>
                 <td><label for="tareaCheck2">Fecha : </label></td><td><input type="date" className="form-control" name="date" onChange={this.cambio}></input></td>
             </tr>
             <tr>
-              <td><label>URL de Imagen  : </label></td><td><input type="text" className="form-control" name="archivo" /></td>
+              <td><label>Link de Imagen  : </label></td><td><input type="text" className="form-control" name="archivo" onChange={this.cambio}/></td>
             </tr>
             <tr>
                 <td><label>Dirección : </label></td><td><input type="text" className="form-control" name="dir" onChange={this.cambio}></input></td>
@@ -152,7 +250,7 @@ class CrearAnuncio extends Component{
             </tr>
             <tr><br></br></tr>
             <tr>
-                <td colSpan="2"><button class="btn btn-primary" >Aceptar</button></td>
+                <td colSpan="2"><button class="btn btn-primary" onClick={this.onClickSub} >Crear Evento</button></td>
             </tr>
         </table>
         </div>

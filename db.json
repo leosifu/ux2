@@ -7,10 +7,11 @@
       "img": "https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg",
       "direccion": "Calle Olmos 2233",
       "region": "Metropolitana",
-      "comuna": "Quinta Normal",
+      "comuna": "QuintaNormal",
       "cantidad": "3",
       "estilo": "rock",
-      "cuerpo": "Evento dedicado a los fanaticos del rock, necesitamos bandas de este estilo que tengan una masa de fans de al menos 100 personas"
+      "cuerpo": "Evento dedicado a los fanaticos del rock, necesitamos bandas de este estilo que tengan una masa de fans de al menos 100 personas",
+      "mes": 5
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "comuna": "Providencia",
       "cantidad": "3",
       "estilo": "pop",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "mes": 3
     },
     {
       "id": 3,
@@ -31,10 +33,11 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg",
       "direccion": "Las rejas 1233",
       "region": "Metropolitana",
-      "comuna": "Quinta Normal",
+      "comuna": "QuintaNormal",
       "cantidad": "1",
       "estilo": "ska",
-      "cuerpo": "Evento de ska, se necesita una banda que tenga equipo de sonido"
+      "cuerpo": "Evento de ska, se necesita una banda que tenga equipo de sonido",
+      "mes": 5
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "comuna": "Recoleta",
       "cantidad": "2",
       "estilo": "metal",
-      "cuerpo": "Necesito 2 bandas de metal que puedan traer publico, al menos 50 personas. Se proporcionará equipo de sonido en el lugar"
+      "cuerpo": "Necesito 2 bandas de metal que puedan traer publico, al menos 50 personas. Se proporcionará equipo de sonido en el lugar",
+      "mes": 5
     },
     {
       "id": 5,
@@ -58,7 +62,8 @@
       "comuna": "Maipu",
       "cantidad": "4",
       "estilo": "punk",
-      "cuerpo": "Necesito 4 bandas de punk con equipo de sonido de preferencia, cada banda debe traer 10 personas"
+      "cuerpo": "Necesito 4 bandas de punk con equipo de sonido de preferencia, cada banda debe traer 10 personas",
+      "mes": 3
     },
     {
       "id": 6,
@@ -70,7 +75,8 @@
       "comuna": "Renca",
       "cantidad": "1",
       "estilo": "rock",
-      "cuerpo": "Se necesita una banda de rock para evento de inaguracion de un pub, la banda debe traer equipo de sonido"
+      "cuerpo": "Se necesita una banda de rock para evento de inaguracion de un pub, la banda debe traer equipo de sonido",
+      "mes": 2
     },
     {
       "id": 7,
@@ -79,11 +85,24 @@
       "img": "https://cdn.evbstatic.com/s3-build/perm_001/e7b3dc/django/images/assortments/overview/hero@2x.jpg",
       "direccion": "Los andes 8843",
       "region": "Metropolitana",
-      "comuna": "Lo Prado",
+      "comuna": "LoPrado",
       "cantidad": "1",
       "estilo": "trap",
-      "cuerpo": "Necesito 1 cantante de trap para un evento que se realizará por la inaguracion de un bar"
-      
+      "cuerpo": "Necesito 1 cantante de trap para un evento que se realizará por la inaguracion de un bar",
+      "mes": 4
+    },
+    {
+      "title": "Nuevo evento",
+      "fecha": "2019-08-15",
+      "img": "http://www.grupoeventix.com/images/eventos-empresas/041_eventos_amway_007.jpg",
+      "direccion": "Algun Lugar",
+      "region": "MagallanesYAntartica",
+      "comuna": "PuertoNatales",
+      "cantidad": "1",
+      "estilo": "pop",
+      "cuerpo": "no se que poner aca",
+      "mes": 8,
+      "id": 9
     }
   ],
   "bandas": [
@@ -94,7 +113,7 @@
       "img": "https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg",
       "region": "Metropolitana",
       "comuna": "Lo Prado",
-      "estilo":"pop"
+      "estilo": "pop"
     },
     {
       "title": "Apuesta",
@@ -102,7 +121,7 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfXpvDpZQmIjYnDC1p8qkM9pMk4UwNvSVtdE12RJLkjZ7w4XL3w",
       "region": "Metropolitana",
       "comuna": "Renca",
-      "estilo":"rock"
+      "estilo": "rock"
     },
     {
       "id": 3,
@@ -111,7 +130,7 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg",
       "region": "Metropolitana",
       "comuna": "Quinta Normal",
-      "estilo":"rock"
+      "estilo": "rock"
     },
     {
       "id": 4,
@@ -120,7 +139,7 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn2PVuOtgpK-XEG0D2odXOqtg3a65vrqu7561mPl8trCEJCPQ7Q",
       "region": "Metropolitana",
       "comuna": "Recoleta",
-      "estilo":"punk"
+      "estilo": "punk"
     },
     {
       "id": 5,
@@ -129,7 +148,7 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol9TbYoaSkq5wDXXZZ7c6iNaWSs0p2IYP-BMsbngpTFfqhLe4",
       "region": "Metropolitana",
       "comuna": "Maipu",
-      "estilo":"pop"
+      "estilo": "pop"
     },
     {
       "id": 6,
@@ -138,7 +157,7 @@
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5iX3Hksg6iQT1STitOcK9labD4UPPcwpVja89qLAs-gdqTqSSg",
       "region": "Metropolitana",
       "comuna": "Quilicura",
-      "estilo":"rock"
+      "estilo": "rock"
     }
   ]
 }

@@ -35,7 +35,7 @@ class AnunciosBanda extends Component{
         <img src={anuncio.img} class="card-img-top imagenAnuncio" alt="..." />
         <div class="card-body">
           <h5 class="card-title">{anuncio.title}</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          <p class="card-text">{anuncio.cuerpo}</p>
         </div>
         <div class="card-footer footAnun">
           <button class="btn btn-primary">Ver Perfil</button>
@@ -83,7 +83,7 @@ class AnunciosBanda extends Component{
     const Com = this.state.com.map((com)=>{
       return(
 
-          <option>
+          <option value={com.replace(/\s/g, "")}>
             {com}
           </option>
       )
