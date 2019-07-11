@@ -26,10 +26,6 @@ class Perfil extends Component{
     .then(res=>{
 
       console.log(res.data);
-      if(res.data.length>0){
-        console.log("olii");
-        this.props.history.push('/');
-      }
     })
     .catch((error)=>{
 

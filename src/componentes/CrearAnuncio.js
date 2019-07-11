@@ -4,6 +4,7 @@ import '../css/crearAnuncio.css'
 import axios from 'axios';
 import Rodal from 'rodal';
 import 'rodal/lib/rodal.css';
+import { Link } from 'react-router-dom';
 
 
 class CrearAnuncio extends Component{
@@ -176,6 +177,14 @@ class CrearAnuncio extends Component{
     return(
       <div className="row">
         <div className="col-2 margCalen">
+        <div class=" border-right margSide">
+          <div class="list-group list-group-flush">
+            <Link className="sideE" to='/eventos'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-search iconP"></i>    Eventos</a>
+            </Link>
+            <Link className="sideE" to='/crearAnuncio'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-plus-circle iconP"></i>      Crear Evento</a>
+            </Link>
+          </div>
+        </div>
         <h6>Próximos Eventos</h6>
           <div style={{fontSize: 9}}>
             <Calendar/>

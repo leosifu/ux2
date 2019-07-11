@@ -122,25 +122,36 @@ class AnunciosEvento extends Component{
         this.setState({region})
         this.setState({com:comunasId})
     }
+    else{
+      this.mylist = [];
+      for(var i=0; i<10; i++) {
+        this.mylist.push(i);
+      }
+      this.setState({ com: this.mylist });
+    }
 
     event.preventDefault();
   }
 
   renderCom(){
-    const Com = this.state.com.map((com)=>{
-      return(
+    if(this.state.com){
+      if(this.state.com.length>0){
+        const Com = this.state.com.map((com)=>{
+          return(
 
-          <option value={com.replace(/\s/g, "")}>
-            {com}
-          </option>
-      )
-    })
-    return(
-      <select name="comuna" id="comuna" className="comuna custom-select" onChange={this.handleChange2}>
-          <option>Comunas por Region</option>
-          {Com}
-      </select>
-    )
+              <option value={com.replace(/\s/g, "")}>
+                {com}
+              </option>
+          )
+        })
+        return(
+          <select name="comuna" id="comuna" className="comuna custom-select" onChange={this.handleChange2}>
+              <option>Comunas por Region</option>
+              {Com}
+          </select>
+        )
+      }
+    }
   }
 
   handleChange2(event){
