@@ -11,7 +11,8 @@
       "cantidad": "3",
       "estilo": "rock",
       "cuerpo": "Evento dedicado a los fanaticos del rock, necesitamos bandas de este estilo que tengan una masa de fans de al menos 100 personas",
-      "mes": 5
+      "mes": 5,
+      "idA": 2
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "cantidad": "3",
       "estilo": "pop",
       "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "mes": 3
+      "mes": 3,
+      "idA": 2
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "cantidad": "1",
       "estilo": "ska",
       "cuerpo": "Evento de ska, se necesita una banda que tenga equipo de sonido",
-      "mes": 5
+      "mes": 5,
+      "idA": 2
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "cantidad": "2",
       "estilo": "metal",
       "cuerpo": "Necesito 2 bandas de metal que puedan traer publico, al menos 50 personas. Se proporcionará equipo de sonido en el lugar",
-      "mes": 5
+      "mes": 5,
+      "idA": 2
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "cantidad": "4",
       "estilo": "punk",
       "cuerpo": "Necesito 4 bandas de punk con equipo de sonido de preferencia, cada banda debe traer 10 personas",
-      "mes": 3
+      "mes": 3,
+      "idA": 2
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "cantidad": "1",
       "estilo": "rock",
       "cuerpo": "Se necesita una banda de rock para evento de inaguracion de un pub, la banda debe traer equipo de sonido",
-      "mes": 2
+      "mes": 2,
+      "idA": 2
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "cantidad": "1",
       "estilo": "trap",
       "cuerpo": "Necesito 1 cantante de trap para un evento que se realizará por la inaguracion de un bar",
-      "mes": 4
+      "mes": 4,
+      "idA": 2
     },
     {
       "title": "Nuevo evento",
@@ -102,7 +109,22 @@
       "estilo": "pop",
       "cuerpo": "no se que poner aca",
       "mes": 8,
-      "id": 9
+      "id": 9,
+      "idA": 2
+    },
+    {
+      "title": "asdasdads",
+      "fecha": "2019-07-26",
+      "img": "asdsad",
+      "direccion": "asdasd",
+      "region": "MagallanesYAntartica",
+      "comuna": "PuntaArenas",
+      "cantidad": "1",
+      "estilo": "asdads",
+      "cuerpo": "asasd",
+      "mes": 7,
+      "idA": 2,
+      "id": 10
     }
   ],
   "bandas": [
@@ -158,6 +180,23 @@
       "region": "Metropolitana",
       "comuna": "Quilicura",
       "estilo": "rock"
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nombre": "pedro",
+      "pass": "123"
+    },
+    {
+      "id": 2,
+      "nombre": "juan",
+      "pass": "abc"
+    },
+    {
+      "id": 3,
+      "nombre": "diego",
+      "pass": "qwe"
     }
   ]
 }

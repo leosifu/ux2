@@ -21,11 +21,15 @@ class Perfil extends Component{
   }
 
   componentDidMount(){
-    var link = "http://localhost:3001/anuncios"
+    var link = "http://localhost:3001/anuncio"
     axios.get(link)
     .then(res=>{
 
-      console.log(res);
+      console.log(res.data);
+      if(res.data.length>0){
+        console.log("olii");
+        this.props.history.push('/');
+      }
     })
     .catch((error)=>{
 

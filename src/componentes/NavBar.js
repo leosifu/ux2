@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
 import '../css/navbar.css'
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
 
 class Nav extends Component{
+
+  constructor(props) {
+      super(props);
+      this.state = {
+        nLog: false
+      };
+      this.logT = this.logT.bind(this)
+
+    }
 
   componentDidMount(){
     var lis = document.getElementsByClassName("menuA");
@@ -12,6 +22,30 @@ class Nav extends Component{
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
       });
+    }
+    console.log(this.props);
+  }
+
+  logT(){
+    if(this.props.login.nombre == ''){
+      return(
+        <Link to="/login">
+        <button class="btn  logIn" type="button">Login</button>
+        </Link>
+      )
+    }
+    else{
+      return(
+        <Link to="/perfil">
+        <button class="btn  logIn" type="button">Mi Cuenta</button>
+        </Link>
+      )
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    if(this.props.login != prevProps.login){
+      this.logT()
     }
   }
 
@@ -53,9 +87,7 @@ class Nav extends Component{
 
             <form class="form-inline">
               <button class="btn btn-sm reg" type="button"><u>Registro</u></button>
-              <Link to="/login">
-              <button class="btn  logIn" type="button">Login</button>
-              </Link>
+              {this.logT()}
             </form>
 
 
@@ -65,4 +97,9 @@ class Nav extends Component{
     )
   }
 }
-export default Nav;
+const mapStateToProps = state =>{
+  return {
+    login: state.login
+  }
+}
+export default connect(mapStateToProps)(Nav);

@@ -79,7 +79,7 @@ class AnunciosEvento extends Component{
           </div>
           <div class="card-footer footAnun">
             <button class="btn btn-primary">Ver Perfil</button>
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <small class="text-muted">{anuncio.fecha}</small>
           </div>
         </div>
       ))

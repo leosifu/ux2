@@ -142,7 +142,8 @@ class CrearAnuncio extends Component{
         "cantidad": this.state.cant,
         "estilo": this.state.est,
         "cuerpo": this.state.detalles,
-        "mes": mes
+        "mes": mes,
+        "idA": 2
       }
       console.log(Evento);
       var link = "http://localhost:3001/eventos"
