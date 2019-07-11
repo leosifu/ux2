@@ -147,7 +147,7 @@ class AnunciosBanda extends Component{
               <option value="3">Voz</option>
             </select>
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button">Buscar</button>
+              <button class="btn btn-primary" type="button">Buscar</button>
             </div>
           </div>
           {this.anuncios()}

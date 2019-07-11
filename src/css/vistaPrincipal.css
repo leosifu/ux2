@@ -10,7 +10,6 @@
 }
 
 body{
-  background-color: #f5f2ff;
   color: #28262c;
 
 }
@@ -32,17 +31,17 @@ hr{
 
 .margNoti{
   padding: 30px 50px 10px 50px;
- 
+
 }
 
 .margCalen{
   border: 1px solid #28262c;
   height: 900px;
-  
+
 }
 
 .calen{
   background-color: #f5f2ff !important;
-  
+
 
 }

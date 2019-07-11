@@ -54,7 +54,7 @@ class VistaPrincipal extends Component{
           <div class="card-body">
             <h5 class="card-title">Evento 1</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-            <a href="#" class="btn botonLeer">Leer noticia</a>
+            <a href="#" class="btn btn-primary">Leer noticia</a>
           </div>
         </div>
         <hr></hr>
@@ -62,7 +62,7 @@ class VistaPrincipal extends Component{
           <div class="card-body">
             <h5 class="card-title">Evento pasado 2</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-            <a href="#" class="btn  botonLeer">Leer noticia</a>
+            <a href="#" class="btn  btn-primary">Leer noticia</a>
           </div>
         </div>
         </div>

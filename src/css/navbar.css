@@ -8,7 +8,7 @@
 }
 .menuA{
   color: #f5f2ff !important;
-  
+
 }
 
 ul li a {
@@ -19,30 +19,30 @@ text-align: center;
 }
 
 ul li a:hover {
-  
+
   background: #72bb53ff;
-  /*-webkit-transition-duration: 0.2s; 
+  /*-webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;*/
   text-decoration: none;
   border-radius: 5px;
-  
-  
+
+
   }
 
 
 /*.menuA{
   color: #f5f2ff !important;
--webkit-transition-duration: 0.4s; 
+-webkit-transition-duration: 0.4s;
   transition-duration: 0.2s;
   margin-inline-start: 80px;
   margin-top: 5px;
-  
+
   width: 90%;
   text-align: center;
 }
 
 .menuA:hover {
-  background-color: #72bb53ff; 
+  background-color: #72bb53ff;
   color: white !important;
   border-radius: 5px 5px 5px 5px;
   align-content: right;
@@ -50,7 +50,7 @@ ul li a:hover {
 }
 
 .menuA:active{
-  background-color: #72bb53ff; 
+  background-color: #72bb53ff;
   color: white !important;
   border-radius: 5px 5px 5px 5px;
   align-content: right;
@@ -61,6 +61,12 @@ ul li a:hover {
   position: relative; left: 90px; top: 5px;
   height: 80%;
 }*/
+
+.logo{
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
 
 .reg{
   color: #72bb53ff;
@@ -90,7 +96,7 @@ ul li a:hover {
     border-right:1px solid #5707b3;
     margin-top: 12px;
 
-   
+
 
 }
 
@@ -99,4 +105,3 @@ ul li a:hover {
 .navbar-toggler{
   background-color: #72bb53ff !important;
 }
-

@@ -18,7 +18,7 @@ class Nav extends Component{
   render(){
     return(
       <nav class="navbar navbar-expand-lg navbar-light bg-light navB">
-        <a class="navbar-brand" href="#">Nav</a>
+        <img className="logo" src="https://scontent.faep13-1.fna.fbcdn.net/v/t1.15752-9/67111383_898027917217349_1084682140790030336_n.png?_nc_cat=106&_nc_oc=AQmjRHDh2igJa5-6YeLRGrG8kggXoJzcO86Pbe8F_wABV8SV75tlGh7UlldcCamlXoU&_nc_ht=scontent.faep13-1.fna&oh=e9ea3754f39a9a1a662aa53d40a8868f&oe=5DBF30E4"/>
         <h3><label>Garage Music</label></h3>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,14 +50,14 @@ class Nav extends Component{
             </Link>
           </li>
           <div class="lineaVertical" ></div>
-          
+
             <form class="form-inline">
               <button class="btn btn-sm reg" type="button"><u>Registro</u></button>
               <Link to="/login">
               <button class="btn  logIn" type="button">Login</button>
               </Link>
             </form>
-          
+
 
         </ul>
         </div>

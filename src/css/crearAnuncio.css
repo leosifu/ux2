@@ -1,12 +1,13 @@
 .crearAnuncio {
+    padding-left: 30px;
     border:1px solid #28262c;
     text-align: right;
-    height: 500px;
-    width: 70%;
+    height: 620px;
+    width: 80%;
     position: relative; top:40px; left: 10%;
     color: #28262c;
     border-radius: 10px;
-   
+
 }
 
 input {

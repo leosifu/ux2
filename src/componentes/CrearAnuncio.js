@@ -76,7 +76,7 @@ class CrearAnuncio extends Component{
       )
     })
     return(
-      <select name="comuna" id="comuna" className="comuna">
+      <select name="comuna" id="comuna" className="comuna custom-select">
           <option value="0">Comunas por Region</option>
           {Com}
       </select>
@@ -101,16 +101,16 @@ class CrearAnuncio extends Component{
 
         <table>
             <tr>
-                <td><label>Nombre evento : </label></td><td><input type="text" id="nombre" onChange={this.cambio}></input></td>
+                <td><label>Nombre evento : </label></td><td><input type="text" className="form-control" id="nombre" onChange={this.cambio}></input></td>
             </tr>
             <tr>
-                <td><label for="tareaCheck2">Fecha : </label></td><td><input type="date" name="date" onChange={this.cambio}></input></td>
+                <td><label for="tareaCheck2">Fecha : </label></td><td><input type="date" className="form-control" name="date" onChange={this.cambio}></input></td>
             </tr>
             <tr>
-              <td><label>Imagen  : </label></td><td><input type="file" name="archivo" /><br /></td>
+              <td><label>URL de Imagen  : </label></td><td><input type="text" className="form-control" name="archivo" /></td>
             </tr>
             <tr>
-                <td><label>Dirección : </label></td><td><input type="text" name="dir" onChange={this.cambio}></input></td>
+                <td><label>Dirección : </label></td><td><input type="text" className="form-control" name="dir" onChange={this.cambio}></input></td>
             </tr>
             <tr>
                 <td><label>Región : </label></td>
@@ -140,19 +140,19 @@ class CrearAnuncio extends Component{
                 </td>
             </tr>
             <tr>
-                <td><label>Cantidad Banda/músico <br></br>que necesita  </label></td><td align="left"><input className="cantidad" type="text" name="cant" onChange={this.cambio}></input></td>
+                <td><label>Cantidad Banda/músico <br></br>que necesita  </label></td><td align="left"><input className="cantidad" type="text" className="form-control" name="cant" onChange={this.cambio}></input></td>
             </tr>
             <tr>
             <td><label>Estilo : </label></td><td>
 
-    <input type="text" name="est" onChange={this.cambio}></input></td>
+    <input type="text" className="form-control" name="est" onChange={this.cambio}></input></td>
             </tr>
             <tr>
-                <td ><label>Detalles adicionales  </label></td><td colSpan="3" rowSpan="2" align="left"><textarea  rows="4" cols="50" name="detalles" onChange={this.cambio}></textarea></td><td></td><td></td>
+                <td ><label>Detalles adicionales  </label></td><td colSpan="3" rowSpan="2" align="left"><textarea className="form-control" rows="4" cols="50" name="detalles" onChange={this.cambio}></textarea></td><td></td><td></td>
             </tr>
             <tr><br></br></tr>
             <tr>
-                <td colSpan="2"><button class="botonPublicar" >Aceptar</button></td>
+                <td colSpan="2"><button class="btn btn-primary" >Aceptar</button></td>
             </tr>
         </table>
         </div>

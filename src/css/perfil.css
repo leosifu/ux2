@@ -23,7 +23,7 @@
 }
 
 .sideE{
-  background-color: #f5f2ff;
+  
   color: #28262c;
   text-decoration: none;
   border-bottom: 1px solid #998fc7;
@@ -52,8 +52,9 @@
   border-color: #998fc7;
 }
 
-.btn:hover{
-
+.btn-primary:hover{
+  background-color: #72bb53ff;
+  border-color: #72bb53ff;
 }
 
 
