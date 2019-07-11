@@ -180,7 +180,6 @@ class CrearAnuncio extends Component{
           <div style={{fontSize: 9}}>
             <Calendar/>
           </div>
-          <button onClick={this.show}>show</button>
 
           <Rodal visible={this.state.visible} onClose={this.hide} class="rodal-dialog rodal-zoom-enter" width={300} height={120}>
               <div class="header">Se ha creado el evento</div>

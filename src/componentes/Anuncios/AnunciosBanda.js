@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import '../../css/anunciosB.css';
 import Calendar from 'react-calendar';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 
 class AnunciosBanda extends Component{
 
@@ -100,6 +102,14 @@ class AnunciosBanda extends Component{
     return(
       <div className="row">
       <div className="col-2 margCalen">
+      <div class=" border-right margSide">
+        <div class="list-group list-group-flush">
+          <Link className="sideE" to='/eventos'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-search iconP"></i>    Buscar Bandas</a>
+          </Link>
+          <Link className="sideE" to='/crearAnuncio'><a class="list-group-item list-group-item-action sideE"><i class="fas fa-plus-circle iconP"></i>      Anuncios Bandas</a>
+          </Link>
+        </div>
+      </div>
       <h6>Próximos Eventos</h6>
         <div style={{fontSize: 9}}>
           <Calendar/>
@@ -112,7 +122,7 @@ class AnunciosBanda extends Component{
           </div>
 
 
-          <h3>Búsqueda de Eventos</h3>
+          <h3>Búsqueda de Bandas</h3>
           <div className="input-group buscadorAnun">
           <select class="custom-select"  value={this.state.value} onChange={this.handleChange}>
             <option selected="selected">Regiones</option>
