@@ -2,83 +2,143 @@
   "eventos": [
     {
       "id": 1,
-      "title": "Nombre Evento",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg"
+      "title": "Evento rock",
+      "fecha": "15/05/2019",
+      "img": "https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg",
+      "direccion": "Calle Olmos 2233",
+      "region": "Metropolitana",
+      "comuna": "Quinta Normal",
+      "cantidad": "3",
+      "estilo": "rock",
+      "cuerpo": "Evento dedicado a los fanaticos del rock, necesitamos bandas de este estilo que tengan una masa de fans de al menos 100 personas"
     },
     {
       "id": 2,
-      "title": "Nombre Evento2",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfXpvDpZQmIjYnDC1p8qkM9pMk4UwNvSVtdE12RJLkjZ7w4XL3w"
+      "title": "Evento pop",
+      "fecha": "15/03/2019",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfXpvDpZQmIjYnDC1p8qkM9pMk4UwNvSVtdE12RJLkjZ7w4XL3w",
+      "direccion": "providencia 123",
+      "region": "Metropolitana",
+      "comuna": "Providencia",
+      "cantidad": "3",
+      "estilo": "pop",
+      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
     },
     {
       "id": 3,
-      "title": "Nombre Evento3",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg"
+      "title": "Evento de Ska",
+      "fecha": "25/05/2019",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg",
+      "direccion": "Las rejas 1233",
+      "region": "Metropolitana",
+      "comuna": "Quinta Normal",
+      "cantidad": "1",
+      "estilo": "ska",
+      "cuerpo": "Evento de ska, se necesita una banda que tenga equipo de sonido"
     },
     {
       "id": 4,
-      "title": "Nombre Evento4",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn2PVuOtgpK-XEG0D2odXOqtg3a65vrqu7561mPl8trCEJCPQ7Q"
+      "title": "Evento metal",
+      "fecha": "25/05/2019",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn2PVuOtgpK-XEG0D2odXOqtg3a65vrqu7561mPl8trCEJCPQ7Q",
+      "direccion": "Lo espinoza 2343",
+      "region": "Metropolitana",
+      "comuna": "Recoleta",
+      "cantidad": "2",
+      "estilo": "metal",
+      "cuerpo": "Necesito 2 bandas de metal que puedan traer publico, al menos 50 personas. Se proporcionará equipo de sonido en el lugar"
     },
     {
       "id": 5,
-      "title": "Nombre Evento5",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol9TbYoaSkq5wDXXZZ7c6iNaWSs0p2IYP-BMsbngpTFfqhLe4"
+      "title": "Evento punk",
+      "fecha": "28/03/2019",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol9TbYoaSkq5wDXXZZ7c6iNaWSs0p2IYP-BMsbngpTFfqhLe4",
+      "direccion": "Andes 2343",
+      "region": "Metropolitana",
+      "comuna": "Maipu",
+      "cantidad": "4",
+      "estilo": "punk",
+      "cuerpo": "Necesito 4 bandas de punk con equipo de sonido de preferencia, cada banda debe traer 10 personas"
     },
     {
       "id": 6,
-      "title": "Nombre Evento6",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5iX3Hksg6iQT1STitOcK9labD4UPPcwpVja89qLAs-gdqTqSSg"
+      "title": "Necesito Banda de rock ",
+      "fecha": "13/02/2019",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5iX3Hksg6iQT1STitOcK9labD4UPPcwpVja89qLAs-gdqTqSSg",
+      "direccion": "Andes 2343",
+      "region": "Metropolitana",
+      "comuna": "Renca",
+      "cantidad": "1",
+      "estilo": "rock",
+      "cuerpo": "Se necesita una banda de rock para evento de inaguracion de un pub, la banda debe traer equipo de sonido"
     },
     {
-      "title": "Evento7",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "id": 7,
+      "title": "Musico trap",
+      "fecha": "10/04/2019",
       "img": "https://cdn.evbstatic.com/s3-build/perm_001/e7b3dc/django/images/assortments/overview/hero@2x.jpg",
-      "id": 7
+      "direccion": "Los andes 8843",
+      "region": "Metropolitana",
+      "comuna": "Lo Prado",
+      "cantidad": "1",
+      "estilo": "trap",
+      "cuerpo": "Necesito 1 cantante de trap para un evento que se realizará por la inaguracion de un bar"
+      
     }
   ],
   "bandas": [
     {
       "id": 1,
-      "title": "Nombre Banda",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg"
+      "title": "Love lemon",
+      "cuerpo": "Nos dedicamos a realizar covers de bandas de pop",
+      "img": "https://thewowunicorn.com/wp-content/uploads/2018/12/uso-moviles-eventos-musicales-the-last-unicorn.jpg",
+      "region": "Metropolitana",
+      "comuna": "Lo Prado",
+      "estilo":"pop"
     },
     {
-      "id": 2,
-      "title": "Nombre Banda2",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfXpvDpZQmIjYnDC1p8qkM9pMk4UwNvSVtdE12RJLkjZ7w4XL3w"
+      "title": "Apuesta",
+      "cuerpo": "Banda compuesta por 5 personas... tenemos una gran cantidad de fans y un canal en youtube",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmfXpvDpZQmIjYnDC1p8qkM9pMk4UwNvSVtdE12RJLkjZ7w4XL3w",
+      "region": "Metropolitana",
+      "comuna": "Renca",
+      "estilo":"rock"
     },
     {
       "id": 3,
-      "title": "Nombre Banda",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg"
+      "title": "El sexto",
+      "cuerpo": "Sigue nuestra pagina de Facebook El Sexto ",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TD3n31VaG0G5sNj47yYarI2p0VURobubGHAiyRMM8uvJhU0Lpg",
+      "region": "Metropolitana",
+      "comuna": "Quinta Normal",
+      "estilo":"rock"
     },
     {
       "id": 4,
-      "title": "Nombre Banda",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn2PVuOtgpK-XEG0D2odXOqtg3a65vrqu7561mPl8trCEJCPQ7Q"
+      "title": "Postdata",
+      "cuerpo": "Nuestra banda se llama Postdata se compone de 4 personas, sigue nuestro perfil en Spotify",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn2PVuOtgpK-XEG0D2odXOqtg3a65vrqu7561mPl8trCEJCPQ7Q",
+      "region": "Metropolitana",
+      "comuna": "Recoleta",
+      "estilo":"punk"
     },
     {
       "id": 5,
-      "title": "Nombre Banda",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol9TbYoaSkq5wDXXZZ7c6iNaWSs0p2IYP-BMsbngpTFfqhLe4"
+      "title": "Eclipse",
+      "cuerpo": "Somos una banda con mucha experiencia en eventos y con una gran cantidad de fans",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTol9TbYoaSkq5wDXXZZ7c6iNaWSs0p2IYP-BMsbngpTFfqhLe4",
+      "region": "Metropolitana",
+      "comuna": "Maipu",
+      "estilo":"pop"
     },
     {
       "id": 6,
-      "title": "Nombre Banda",
-      "cuerpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5iX3Hksg6iQT1STitOcK9labD4UPPcwpVja89qLAs-gdqTqSSg"
+      "title": "Fantasma",
+      "cuerpo": "Nuestra banda se compone de 4 personas, tocamos desde el año 2005 ",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5iX3Hksg6iQT1STitOcK9labD4UPPcwpVja89qLAs-gdqTqSSg",
+      "region": "Metropolitana",
+      "comuna": "Quilicura",
+      "estilo":"rock"
     }
   ]
 }
