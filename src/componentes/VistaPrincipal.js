@@ -8,10 +8,12 @@ class VistaPrincipal extends Component{
     return(
       <div>
         <div class="row ">
-          <div class="col-2 margCalen">
-          <br></br>
-          <h5><center><label>Próximos eventos</label></center></h5>
-          <Calendar className="calen"/>
+        <div className="col-2 margCalen">
+        <h6>Próximos Eventos</h6>
+          <div style={{fontSize: 9}}>
+            <Calendar/>
+          </div>
+
         </div>
 
         <div class="col-9">

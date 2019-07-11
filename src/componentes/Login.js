@@ -14,7 +14,7 @@ class Login extends Component{
             <input type="text"></input><br></br>
             <label>Contraseña</label><br></br>
             <input type="password"></input><br></br>
-            <Link  to="/HomeG">
+            <Link  to="/perfil">
             <button class="btn boton" type="button">Login</button>
             </Link>
         </div>
@@ -24,4 +24,3 @@ class Login extends Component{
     }
 }
 export default Login
-
